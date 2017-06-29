@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tList = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // tList
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(27, 24);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(376, 277);
-            this.listBox1.TabIndex = 0;
+            this.tList.FormattingEnabled = true;
+            this.tList.Location = new System.Drawing.Point(27, 24);
+            this.tList.Name = "tList";
+            this.tList.Size = new System.Drawing.Size(795, 277);
+            this.tList.TabIndex = 0;
             // 
             // Transactions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 344);
-            this.Controls.Add(this.listBox1);
+            this.ClientSize = new System.Drawing.Size(854, 344);
+            this.Controls.Add(this.tList);
             this.Name = "Transactions";
             this.Text = "Transactions";
+            this.Load += new System.EventHandler(this.Transactions_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox tList;
     }
 }

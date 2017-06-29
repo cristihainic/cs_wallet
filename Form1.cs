@@ -45,7 +45,8 @@ namespace BitcoinWallet
 
         private void transactionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Transactions tran = new Transactions();
+            tran.Show();
         }
 
         private void safelyCloseWalletToolStripMenuItem_Click(object sender, EventArgs e)
